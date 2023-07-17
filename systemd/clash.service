@@ -1,0 +1,12 @@
+[Unit]
+Description=clash
+
+[Service]
+ExecStart=/home/ubuntu/clash/clash -f /home/ubuntu/clash/config.yml
+User=ubuntu
+Environment=http_proxy="http://127.0.0.1:7890/"
+Environment=https_proxy="http://127.0.0.1:7890/"
+Environment=no_proxy="localhost,127.0.0.1"
+
+[Install]
+WantedBy=multi-user.target

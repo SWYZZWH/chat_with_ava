@@ -1,0 +1,9 @@
+[Unit]
+Description=chat_with_ava_frontend
+
+[Service]
+ExecStart=/usr/bin/python3 -m http.server 8080
+WorkingDirectory=/home/ubuntu/web
+
+[Install]
+WantedBy=multi-user.target
