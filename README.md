@@ -102,7 +102,7 @@ mv clash-linux-amd64-v1.17.0 clash
 chmod +x clash
 
 # get config
-wget -O config.yml https://s.juzicloud.vip/link/kyYNxlz9nAJcAwZX?clash=1&log-level=info 2>/dev/null
+wget -O config.yml ${your_juzi_link} 2>/dev/null
 
 # start clash in background
 ./clash -f config.yml &
